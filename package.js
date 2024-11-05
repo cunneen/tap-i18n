@@ -10,7 +10,7 @@ server = 'server';
 client = 'client';
 
 Package.onUse(function (api) {
-  api.versionsFrom("2.2.4");
+  api.versionsFrom("3.0");
 
   api.use('coffeescript@2.4.1', both);
   api.use('underscore@1.0.10', both);
@@ -21,7 +21,7 @@ Package.onUse(function (api) {
 
   api.use('tracker', both);
   api.use('session', client);
-  api.use('jquery@1.0.10', client);
+  api.use('jquery@3.0.2', client);
   api.use('templating@1.4.0', client);
 
   api.use("webapp", server);
