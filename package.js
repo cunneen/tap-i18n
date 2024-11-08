@@ -10,18 +10,18 @@ server = 'server';
 client = 'client';
 
 Package.onUse(function (api) {
-  api.versionsFrom("3.0");
+  api.versionsFrom(["2.2.4","3.0"]);
 
   api.use('coffeescript@2.4.1', both);
   api.use('underscore@1.0.10', both);
   api.use('isobuild:compiler-plugin@1.0.0', both);
 
-  api.use('raix:eventemitter@1.0.0', both);
+  api.use('raix:eventemitter@0.1.1 || 1.0.0', both);
   api.use('meteorspark:util@0.2.0', both);
 
   api.use('tracker', both);
   api.use('session', client);
-  api.use('jquery@3.0.2', client);
+  api.use('jquery@1.0.10 || 3.0.0', client);
   api.use('templating@1.4.0', client);
 
   api.use("webapp", server);
