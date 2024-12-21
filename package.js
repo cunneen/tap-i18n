@@ -16,7 +16,7 @@ Package.onUse(function (api) {
   api.use('underscore@1.0.10', both);
   api.use('isobuild:compiler-plugin@1.0.0', both);
 
-  api.use('raix:eventemitter@2.0.0', both);
+  api.use('raix:eventemitter@1.0.0', both);
   api.use('meteorspark:util@0.2.0', both);
 
   api.use('tracker', both);
