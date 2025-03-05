@@ -63,8 +63,7 @@ compilers.generic_compiler = (extension, helper) ->
           # If this is a project but project-tap.i18n haven't compiled yet add default project conf
           # for case there is no project-tap.i18n defined in this project.
           # Reminder: we don't require projects to have project-tap.i18n
-          if not(helpers.isDefaultProjectConfInserted(input_file)) and \
-            not(helpers.isProjectI18nLoaded(input_file))
+          if not(helpers.isDefaultProjectConfInserted(input_file)) and not(helpers.isProjectI18nLoaded(input_file))
             output += share.getProjectConfJs(share.projectI18nObjCleaner({})) # defined in project-tap.i18n.coffee
 
             helpers.markDefaultProjectConfInserted(input_file)
